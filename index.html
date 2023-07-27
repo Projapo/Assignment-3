@@ -24,6 +24,12 @@ module.exports = {
     .font-lato{
         font-family: 'Lato', sans-serif;
     }
+    .over{ 
+        position: absolute; top:20px; height:100%; width:80%; align-items: center;
+    }
+    .med{
+        position: absolute; top:-20px; height:100%; width:78%; align-items: center;
+    }
   </style>
 
 </head>
@@ -34,7 +40,21 @@ module.exports = {
         <section class="">
             <div class="mx-48">
                 <div class="hero-content min-h-screen" style="background-image: url(/images/team.png); background-repeat: no-repeat;">
-                    <div class="hero-overlay bg-opacity-60" style="position:absolute;top:-20px; height:96%; width:77%; align-items: center;"></div>
+                    <div class="md:med lg:over hero-overlay bg-opacity-60">
+                        <h4 class="text-5xl text-white font-bold text-center mt-24">Meet the team section</h4>
+                        <p class="text-center text-white text-l mt-10">Contrary to popular belief, is not simply random text. 
+                            It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+                            <div class="mt-20 mx-40 ">
+                                <img class="mb-5" src="images/member1.png" alt="">
+                                <h4 class="mb-2 mx-2 text-white font-semibold text-lg">Awlad Hossain</h4>
+                                <p class="mb-3 mx-6 text-white">Fruits Expert</p>
+                                  <div class="flex mx-9">
+                                    <img class="w-5" src="icons/icons8-twitter-24.png" alt="">
+                                    <img class="w-5" src="icons/icons8-facebook-circled-50.png" alt="">
+                                    <img  class="w-5" src="icons/icons8-pinterest-24.png" alt="">
+                                  </div>
+                            </div>
+                    </div>
                 </div>
                 
              </div>
@@ -42,7 +62,7 @@ module.exports = {
         </section>
         <!-- Why Choose Us -->
         <section class="bg-base-200">
-            <h4 class="text-center text-5xl font-bold"> Why Choose Us</h4>
+            <h4 class="text-center text-5xl font-bold pt-36"> Why Choose Us</h4>
             <p class="text-center mt-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
                 <br>  Latin literature from 45 BC, making it over 2000 years old. </p>
             <div class="hero my-10 mb-1 p-12 bg-base-200">
