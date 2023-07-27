@@ -27,6 +27,20 @@ module.exports = {
     .color{
         color: #F85559;
     }
+    .overlay{
+        position: absolute;
+        width: 2240px;
+        height: 1260px;
+        overflow: hidden;
+        transition: .5s ease;
+        opacity: 0; 
+    }
+    .card:hover .overlay{
+    background-color: rgba(0,0,0,0.75);
+    transition: 0.5s ease-in-out;
+    overflow: visible;
+    opacity: 1;
+}
   </style>
 
 </head>
@@ -36,7 +50,7 @@ module.exports = {
         <!-- Deal of the day -->
         <section>
             <div class="mx-48">
-            <div class="flex justify-between items-baseline w-" >
+            <div class="flex justify-between items-baseline" >
             <div>
                 <h3 class="text-3xl font-extrabold mt-24 mb-5">Deal of the day</h3>
                 <p class="text-sm font-medium text-gray-500 mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
@@ -72,9 +86,12 @@ module.exports = {
           </div>  
           <div class="mx-48">
             <div class="grid grid-cols-4 gap-4 mb-20">
-            <div class="card bg-base-100 border-2">
+            <div class="card1 bg-base-100 border-2">
                 <figure class="px-10 pt-10">
                   <img src="images/fruit1.png"/>
+                  <div class="overlay">
+                    <img src="images/fruit1.png" alt="">
+                  </div>
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -96,6 +113,9 @@ module.exports = {
                 <div class="card bg-base-100 border-2">
                     <figure class="px-10 pt-10">
                       <img src="images/fruit2.png"/>
+                      <div class="overlay">
+                        <img src="images/fruit2.png" alt="">
+                      </div>
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -118,6 +138,9 @@ module.exports = {
                   <div class="card bg-base-100 border-2">
                     <figure class="px-10 pt-10">
                       <img src="images/fruit3.png"/>
+                      <div class="overlay">
+                        <img src="images/fruit3.png" alt="">
+                      </div>
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -139,6 +162,9 @@ module.exports = {
                 <div class="card bg-base-100 border-2">
                     <figure class="px-10 pt-10">
                       <img src="images/fruit4.png"/>
+                      <div class="overlay">
+                        <img src="images/fruit4.png" alt="">
+                      </div>
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">12.90$ - 18.85$</h2>
