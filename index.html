@@ -36,25 +36,106 @@ module.exports = {
 <body class="font-lato">
     <header></header>
     <main>
+        <!-- Deal of the day -->
+        <section>
+            <div class="mx-48">
+            <div class="flex justify-between items-baseline w-" >
+            <div>
+                <h3 class="text-3xl font-extrabold mt-24 mb-5">Deal of the day</h3>
+                <p class="text-sm font-medium text-gray-500 mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                    <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-4xl">
+                    <span style="--value:15;"></span>
+                  </span>
+                  days
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-4xl">
+                    <span style="--value:10;"></span>
+                  </span>
+                  hours
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-4xl">
+                    <span style="--value:24;"></span>
+                  </span>
+                  min
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-4xl">
+                    <span style="--value:41;"></span>
+                  </span>
+                  sec
+                </div>
+              </div>
+            </div>
+          </div>  
+
+        </section>
         <!-- Meet the team -->
         <section class="">
             <div class="mx-48">
-                <div class="hero-content min-h-screen" style="background-image: url(/images/team.png); background-repeat: no-repeat;">
-                    <div class="md:med lg:over hero-overlay bg-opacity-60">
+                <div class="hero-content w-full" style="background-image: url(/images/team.png); background-repeat: no-repeat;">
+                    <div class="hero-overlay bg-opacity-60 w-full">
                         <h4 class="text-5xl text-white font-bold text-center mt-24">Meet the team section</h4>
                         <p class="text-center text-white text-l mt-10">Contrary to popular belief, is not simply random text. 
                             It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-                            <div class="mt-20 mx-40 ">
-                                <img class="mb-5" src="images/member1.png" alt="">
+                            <div class="flex justify-center gap-10">
+                            <div class="mt-10 mb-10">
+                                <img class="w-24 mb-3 mx-5" src="images/member1.png" alt="">
                                 <h4 class="mb-2 mx-2 text-white font-semibold text-lg">Awlad Hossain</h4>
                                 <p class="mb-3 mx-6 text-white">Fruits Expert</p>
-                                  <div class="flex mx-9">
+                                  <div class="flex gap-1 mx-9">
                                     <img class="w-5" src="icons/icons8-twitter-24.png" alt="">
                                     <img class="w-5" src="icons/icons8-facebook-circled-50.png" alt="">
                                     <img  class="w-5" src="icons/icons8-pinterest-24.png" alt="">
                                   </div>
                             </div>
-                    </div>
+                 
+                            <!--second-->
+
+                            <div class="mt-10 mb-10">
+                                <img class="w-24 mb-3 mx-5" src="images/member2.png" alt="">
+                                <h4 class="mb-2 mx-2 text-white font-semibold text-lg">Safia Chowdhury</h4>
+                                <p class="mb-3 mx-6 text-white">Fruits Expert</p>
+                                  <div class="flex gap-1 mx-9">
+                                    <img class="w-5" src="icons/icons8-twitter-24.png" alt="">
+                                    <img class="w-5" src="icons/icons8-facebook-circled-50.png" alt="">
+                                    <img  class="w-5" src="icons/icons8-pinterest-24.png" alt="">
+                                  </div>
+                            </div>
+
+                            <!--third-->
+                            <div class="mt-10 mb-10">
+                                <img class="w-24 mb-3 mx-5" src="images/member3.png" alt="">
+                                <h4 class="mb-2 mx-2 text-white font-semibold text-lg">Rokib Hossain</h4>
+                                <p class="mb-3 mx-6 text-white">Fruits Expert</p>
+                                  <div class="flex gap-1 mx-9">
+                                    <img class="w-5" src="icons/icons8-twitter-24.png" alt="">
+                                    <img class="w-5" src="icons/icons8-facebook-circled-50.png" alt="">
+                                    <img  class="w-5" src="icons/icons8-pinterest-24.png" alt="">
+                                  </div>
+                            </div>
+
+                            <!--fourth-->
+                            <div class="mt-10 mb-10">
+                                <img class="w-24 mb-3 mx-5" src="images/member4.png" alt="">
+                                <h4 class="mb-2 mx-10 text-white font-semibold text-lg">Chaity</h4>
+                                <p class="mb-3 mx-6 text-white">Fruits Expert</p>
+                                  <div class="flex gap-1 mx-9">
+                                    <img class="w-5" src="icons/icons8-twitter-24.png" alt="">
+                                    <img class="w-5" src="icons/icons8-facebook-circled-50.png" alt="">
+                                    <img  class="w-5" src="icons/icons8-pinterest-24.png" alt="">
+                                  </div>
+                            </div>
+                            </div>
+
+                    <!-- OVER LAY div -->
+                        </div>
+
                 </div>
                 
              </div>
@@ -62,6 +143,7 @@ module.exports = {
         </section>
         <!-- Why Choose Us -->
         <section class="bg-base-200">
+            <div class="mx-44">
             <h4 class="text-center text-5xl font-bold pt-36"> Why Choose Us</h4>
             <p class="text-center mt-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
                 <br>  Latin literature from 45 BC, making it over 2000 years old. </p>
@@ -137,7 +219,8 @@ module.exports = {
                   </div>
                 </div>
                 <!--parent div -->
-              </div>    
+              </div>
+            </div>      
         </section>
     </main>
     <!--Footer Start-->
